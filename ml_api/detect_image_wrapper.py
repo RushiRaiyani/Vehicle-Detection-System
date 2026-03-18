@@ -10,9 +10,9 @@ import easyocr
 from ultralytics import YOLO
 
 # ─── paths (relative to the project root, one level up from ml_api/) ───
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, "runs", "detect", "license_plate_detector", "weights", "best.pt")
-OUTPUT_DIR = os.path.join(BASE_DIR, "ml_api", "output")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # ml_api folder
+MODEL_PATH = os.path.join(BASE_DIR, "runs/detect/license_plate_detector/weights/best.pt")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 
 YOLO_CONF_THRESH = 0.25
 OCR_CONF_THRESH = 0.20
