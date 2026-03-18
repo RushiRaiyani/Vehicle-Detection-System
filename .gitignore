@@ -1,0 +1,40 @@
+# notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# datasets
+data/
+dataset_yolo_all/
+test_images/
+test_videos/
+predictions/
+archive (1)/
+
+# experiments
+detect_plate_ocr/
+fixed_video_detection/
+image_detection/
+predict_yolo/
+prepare_dataset/
+train_yolo/
+video_detection/
+Untitled/
+
+# yolo outputs
+runs/detect/predict*
+runs/detect/*/*.png
+runs/detect/*/*.jpg
+runs/detect/*/*.csv
+runs/detect/*/*.yaml
+
+# keep model
+!runs/detect/license_plate_detector/weights/best.pt
+
+# backend
+backend/node_modules/
+backend/uploads/
+backend/.env
+
+# python
+__pycache__/
+*.pyc
