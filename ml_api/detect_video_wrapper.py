@@ -15,8 +15,8 @@ import easyocr
 from ultralytics import YOLO
 
 # ─── paths ────────────────────────────────────────────────────────────
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, "runs", "detect", "license_plate_detector", "weights", "best.pt")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # ml_api folder
+MODEL_PATH = os.path.join(BASE_DIR, "runs/detect/license_plate_detector/weights/best.pt")
 OUTPUT_DIR = os.path.join(BASE_DIR, "ml_api", "output")
 
 YOLO_CONF = 0.25
