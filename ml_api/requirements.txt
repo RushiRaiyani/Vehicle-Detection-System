@@ -1,9 +1,14 @@
 flask==3.1.0
 flask-cors==5.0.1
 ultralytics>=8.0.0
-easyocr>=1.7.0
-opencv-python>=4.8.0
+easyocr==1.7.1
+opencv-python-headless>=4.8.0
 pandas>=2.0.0
 torch>=2.0.0
 numpy>=1.24.0
 gunicorn
+
+# IMPORTANT FIXES
+python-bidi==0.4.2
+setuptools
+wheel
